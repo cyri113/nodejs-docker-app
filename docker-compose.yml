@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build:
+      context: web
+      dockerfile: Dockerfile
+    command: node index.js
+    ports:
+      - 3000:3000
